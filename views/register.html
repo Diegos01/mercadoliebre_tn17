@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href='css/estilos.css' rel='stylesheet'>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo_search">
+            <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+
+            <div class="search">
+                <form action="#">
+                    <input type="text" name="search" placeholder="Buscar productos, marcas" style="width:100%">
+                    <button type="submit" class="fa fa-search">
+
+
+                    </button>
+                </form>
+            </div>
+            <div class="leyenda">
+                <i class=" fas fa-hand-holding-usd"></i>
+                <span>Compra en cuotas y sin tarjeta de crédito</span>
+            </div>
+
+        </div>
+        <div class="barras">
+            <nav class="sitebar">
+                <ul style="display:flex">
+                    <li style="margin: 5px"><a href="#">Ofertas</a></li>
+                    <li style="margin: 5px"><a href="#">Tiendas Oficiales</a></li>
+                    <li style="margin: 5px"><a href="#">Vender</a></li>
+                    <li style="margin: 5px"><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="loginbar">
+                <ul style="display:flex ;">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-user"></i>
+                    </li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-burger centro">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="banner">
+            <img src="/images/img-home-banner.jpg" width="100%">
+        </div>
+    </header>
+    <form action="/register.html" method="get" class="formregistro">
+        <section>
+            <article>
+                <input type="text" name="nombreApellido" id="nombreAp" minlength="3" required
+                    placeholder="Nombre y Apellido">
+
+            </article>
+            <article>
+                <input type="text" name="nombreUsuario" id="nombreUsu" minlength="3" required
+                    placeholder="Nombre de Usuario">
+
+            </article>
+            <article>
+                <input type="email" name="email" id="email" required placeholder="E-mail">
+
+            </article>
+            <article>
+                <label>Fecha de Nacimiento</label><br>
+                <input type="date" name="fechaNacimiento" id="fechaNac" required>
+            </article>
+            <article>
+                <input type="text" name="domicilio" id="domicilio" required placeholder="Domicilio">
+
+            </article>
+            <article>
+                <label>Perfil del Usuario</label><br>
+                <div>
+                    <label>Comprador</label>
+                    <input type="radio" name="PerfilUsu" value="Comprador">
+                </div>
+                <div>
+                    <label>Vendedor</label>
+                    <input type="radio" name="PerfilUsu" value="Vendedor">
+
+                </div>
+            </article>
+            <article>
+                <label>Intereses</label><br>
+                <input type="checkbox" name="interes" id="chkelectro" value="a">
+                <label>Electro</label><br>
+                <input type="checkbox" name="interes" id="chkmoda" value="b">
+                <label>Moda</label><br>
+                <input type="checkbox" name="interes" id="chkhogar" value="c">
+                <label>Hogar</label><br>
+                <input type="checkbox" name="interes" id="chkjugueteria" value="d">
+                <label>Jugueteria</label><br>
+                <input type="checkbox" name="interes" id="chkvidasana" value="e">
+                <label>Vida Sana</label><br>
+            </article>
+            <label>Foto de Usuario</label><br>
+            <input type="file" name="fotoUsuario">
+
+            <article>
+                <input type="password" placeholder="Contraseña" name="pass" required minlength="3">
+            </article>
+            <article>
+                <input type="password" placeholder="Confirme Contraseña" name="pass2" required minlength="3">
+
+            </article>
+
+            <article>
+                <input type="submit" name="Enviar" class="btn-register-enviar">
+
+                <input type="reset" name="Resetear" class="btn-register-reset">
+            </article>
+
+        </section>
+
+
+
+    </form>
+</body>
+
+</html>

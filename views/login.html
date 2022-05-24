@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href='css/estilos.css' rel='stylesheet'>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo_search">
+            <img src="images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+
+            <div class="search">
+                <form action="#">
+                    <input type="text" name="search" placeholder="Buscar productos, marcas" style="width:100%">
+                    <button type="submit" class="fa fa-search">
+
+
+                    </button>
+                </form>
+            </div>
+            <div class="leyenda">
+                <i class=" fas fa-hand-holding-usd"></i>
+                <span>Compra en cuotas y sin tarjeta de crédito</span>
+            </div>
+
+        </div>
+        <div class="barras">
+            <nav class="sitebar">
+                <ul style="display:flex">
+                    <li style="margin: 5px"><a href="#">Ofertas</a></li>
+                    <li style="margin: 5px"><a href="#">Tiendas Oficiales</a></li>
+                    <li style="margin: 5px"><a href="#">Vender</a></li>
+                    <li style="margin: 5px"><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="loginbar">
+                <ul style="display:flex ;">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-user"></i>
+                    </li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-burger centro">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="banner">
+            <img src="/images/img-home-banner.jpg" width="100%">
+        </div>
+    </header>
+    <form action="/" method="get">
+        <section class="formlogin">
+            <input type="text" name="nombreUsuario" id="nombreUsu" minlength="3" required placeholder="Usuario">
+            <input type="password" name="password" id="password" minlength="3" required placeholder="Password">
+            <input type="submit" class="botonIngreso" Enviar>
+        </section>
+    </form>
+</body>
+
+</html>
