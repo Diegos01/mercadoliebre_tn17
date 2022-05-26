@@ -20,6 +20,10 @@ header {
 
 }
 
+body {
+    background-color: #eaeae6;
+}
+
 input {
 
     top: 20px;
@@ -49,14 +53,20 @@ h4 {
 }
 
 .fa-search {
-    position: absolute;
+    position: relative;
     display: block;
-    top: 21px;
-    right: 16px;
     border: 0;
-    color: #666;
     font-size: 15px;
 
+}
+
+.search button {
+    position: absolute;
+    right: 16px;
+    top: 19px;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .descuentos {
@@ -112,6 +122,7 @@ article {
     background-color: white;
     border: solid 1px #ebebeb;
     border-radius: 5px;
+    width: 100%;
 }
 
 section {
@@ -186,13 +197,15 @@ section {
 .formregistro {
     background-color: #ebebeb;
     font-size: 1rem;
+    width: 80%;
+    padding: 10px;
 
 }
 
 .formlogin {
     background-color: #ebebeb;
     margin-top: 20px;
-    width: 90%;
+    width: 80%;
     justify-content: center;
     padding: 10px;
 }
@@ -243,6 +256,8 @@ main section article i {
     margin-bottom: 10px;
 }
 
+
+
 .search {
     width: 50%;
     margin-bottom: 10px;
@@ -283,6 +298,14 @@ main section article i {
     border: 0ch;
 }
 
+.btn-register-reset:hover {
+    background-color: #0022AA;
+}
+
+.btn-register-enviar:hover {
+    background-color: #0022AA;
+}
+
 
 
 @media (min-width: 361px) {
@@ -309,6 +332,7 @@ main section article i {
         width: 50%;
         border: 5%;
         justify-content: space-between;
+
     }
 
     .menu-burger {
@@ -353,8 +377,14 @@ main section article i {
     }
 
     .search {
+        display: flex;
         width: 33%;
 
+    }
+
+    .search form {
+        display: flex;
+        width: 75%;
     }
 
     .sitebar {
@@ -375,4 +405,22 @@ main section article i {
     }
 
 
+}
+
+@media (min-width: 1280px) {
+
+    .fa-search {
+        position: relative;
+        display: block;
+        border: 0;
+        font-size: 15px;
+
+    }
+
+    .search button {
+        position: relative;
+        right: 25px;
+        border: 0;
+        background-color: white;
+    }
 }
